@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #3b3a30;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50.00%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+td {
+background-color:white;
+}
+
+
+#results {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#results tr:hover {background-color: #ddd;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #034f84;
+  color: white;
+}

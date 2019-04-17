@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+      <link rel="stylesheet" href="static/css/styles.css">
+      <link rel="icon" href="static/images/Logo.ico">
+      <h1>Soy S.A.R.E.K, tu asistente poético personal.</h1>
+      <p></p>
+    </head>
+
+   <body>
+       <div class="column">
+            <img src="static/images/robot-leyendo.jpg" alt="Reading Robot">
+        </div>
+        
+       <div class="column">
+       <p>Aquí tienes tu soneto personalizado. Que lo disfrutes!</p>
+          <table border = 1, id="results">
+                <tr>
+                   <th> {{ result['title'] }} </th>
+                </tr>
+                
+                <tr>
+                   <td> {{ result['dct_stanzas']['0']['text'] }} </td>
+                </tr>
+                
+                <tr>
+                   <td> {{ result['dct_stanzas']['1']['text'] }} </td>
+                </tr>
+                
+                <tr>
+                   <td> {{ result['dct_stanzas']['2']['text'] }} </td>
+                </tr>
+                
+                <tr>
+                   <td> {{ result['dct_stanzas']['3']['text'] }} </td>
+                </tr>
+                
+                <tr>
+                   <td> {{ "-"*50 }} </td>
+                </tr>
+                
+                
+                <tr>
+                   <td> {{ result['author'] }} </td>
+                </tr>
+                
+                <tr>
+                   <td> {{ result['year'] }} </td>
+                </tr>
+
+          </table>
+       </div>
+       
+       <form action="{{ url_for('home') }}">
+           <input type="submit" value="Comenzar de nuevo" />
+       </form>
+
+   </body>
+</html>

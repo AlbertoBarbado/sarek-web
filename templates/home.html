@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+      <link rel="stylesheet" href="static/css/styles.css">
+      <link rel="icon" href="static/images/Logo.ico">
+      <h1> Soy S.A.R.E.K, tu asistente poético personal.</h1>
+      <p>A continuación te haré unas preguntas sobre cómo 
+        te encuentras ahora mismo y te pediré que escribras 
+        un mensaje para recomendarte un soneto totalmente 
+        personalizado para ti.
+      </p>
+    </head>
+
+    <body>  
+        <div class="column">
+            <img src="static/images/robot-leyendo.jpg" alt="Reading Robot">
+        </div>
+
+        <div class="column">
+            <p>Escribe una palabra o una frase y te buscaré un soneto (tardaré unos segundos)</p>
+            <form action = "http://localhost:5000/result" method = "POST">
+            <p>Texto <input type = "text" name = "query_text" /></p>
+            <p><input type = "submit" value = "enviar!" /></p>
+            </form>
+        </div>
+    </body>
+</html>
