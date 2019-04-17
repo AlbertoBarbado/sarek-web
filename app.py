@@ -6,7 +6,7 @@
 """
 
 from flask import Flask, render_template, redirect, url_for, request
-from query_web import embedding_query_stanza
+from program.query_web import embedding_query_stanza
             
 app = Flask(__name__)  
 
