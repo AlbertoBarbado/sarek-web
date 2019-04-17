@@ -15,6 +15,12 @@ After cloning/downloading the repo install the requirements
 $ pip install -r requirements.txt
 ```
 
+After that, install Spacy language model with the following command
+
+```
+$ python -m spacy download es_core_news_sm
+```
+
 Then execute the app.py file
 
 ```

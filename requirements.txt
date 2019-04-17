@@ -13,4 +13,3 @@ bert-embedding==1.0.0
 gunicorn
 xmltodict==0.11.0 
 nltk==3.3.0
-https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-2.1.0/es_core_news_sm-2.1.0.tar.gz
