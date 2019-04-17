@@ -1,7 +1,7 @@
 # SAREK (Sonnet Affective Recommender with Embedding Knowledge)
-This is Sarek, a personal sonnet recommender for spanish poetry!
+This is SAREK, a personal sonnet recommender for spanish poetry!
 
-This repo is a web app that allows users to search for poems with a query that could consist in either a unique word or a sentence. After receiving it, Sarek searchs for the most relevant sonnet from a corpus of Spanish poetry sonnets (dating from S.XV to S.XX) and shows that poem in the web.
+This repo is a web app that allows users to search for poems with a query that could consist in either a unique word or a sentence. After receiving it, SAREK searchs for the most relevant sonnet from a corpus of Spanish poetry sonnets (dating from S.XV to S.XX) and shows that poem in the web.
 
 The retrieval is done using a joint function of the individual words of a stanza and with BERT embedding to assign each word an individual vector. The similarity among stanzas and the query text is computed using cosine similarity.
 
